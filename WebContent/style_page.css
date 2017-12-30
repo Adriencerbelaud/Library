@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin :0px;
+	display:grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 20vh 50vh 20vh;
+	grid-template-areas: 	"header header header" 
+				"aside section aside2" 
+				"footer footer footer";
+
+}
+
+header{
+	margin :0px;
+	background-color:#9cdc86;
+	border-bottom:5px solid #53b231;
+	grid-area: header;
+}
+
+nav{
+	grid-area: nav;
+	background: blue;
+}
+
+section{
+	grid-area: section;
+
+}
+
+aside{
+	grid-area: aside;
+	background: white;
+}
+aside2{
+	grid-area: aside2;
+	background: white;
+}
+
+footer{
+	grid-area: footer;
+	background: #53b231;
+}
+

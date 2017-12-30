@@ -1,0 +1,58 @@
+// Ensemble des requètes SQL à passer pour lancer la base de données Library
+
+//Table des livres Book
+
+CREATE TABLE `book` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) NOT NULL,
+  `price` decimal(5,2) DEFAULT NULL,
+  `availability` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=44 ;
+
+
+//Table des auteurs Author
+
+CREATE TABLE `author` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(70) NOT NULL,
+  `lastname` varchar(70) NOT NULL,
+  `nativeCountry` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+//Table des pays Nativecountry
+
+CREATE TABLE `nativecountry` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `country` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+INSERT INTO `nativecountry` (`id`, `country`) VALUES
+(1, 'France'),
+(2, 'Nepal');
+
+
+//Table de jointure Author_book
+
+CREATE TABLE `author_book` (
+  `id_author` int(11) NOT NULL,
+  `id_book` int(11) NOT NULL,
+  PRIMARY KEY (`id_author`,`id_book`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+//Table des utilisateurs User
+
+CREATE TABLE `user` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pseudo` varchar(70) NOT NULL,
+  `password` char(20) NOT NULL,
+  `firstname` varchar(70) NOT NULL,
+  `lastname` varchar(70) NOT NULL,
+  `email` varchar(90) NOT NULL,
+  `role` varchar(20) NOT NULL DEFAULT 'USER',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;

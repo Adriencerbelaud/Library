@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin :0px;
+	display:grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 20vh 50vh 20vh;
+	grid-template-areas: 	"header header" 
+				"aside section" 
+				"footer footer";
+
+}
+
+header{
+	background-color:#9cdc86;
+	border-bottom:5px solid #53b231;
+	grid-area: header;
+}
+
+nav{
+	grid-area: nav;
+	background: blue;
+}
+
+section{
+	grid-area: section;
+
+}
+
+aside{
+	grid-area: aside;
+	background: grey;
+}
+
+footer{
+	grid-area: footer;
+	background: #53b231;
+}
+

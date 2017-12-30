@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+
+* {
+	margin:0 auto;
+}
+
+
+#header{
+	background-color:#9cdc86;
+	border-bottom:5px solid #53b231;
+}		
+
+h1{
+	padding:20px;
+	font-family:Futura, "Century Gothic", Applegothic, sans-serif;
+	
+}
+
+#corps{
+	text-align: center;
+}
+
+p{
+	padding-left: 10px;
+}
+#ajout{
+	font-family:Futura, "Century Gothic", Applegothic, sans-serif;
+	text-decoration: bold;
+	color: #53b231;
+	padding-left: 10px;
+}
+#ajout2{
+	font-family:Futura, "Century Gothic", Applegothic, sans-serif;
+	text-decoration: bold;
+	color: black;
+	padding-left: 10px;
+}
+
+#secondtable{
+	display: block;
+}
+
+#second{
+
+	border:thin solid;
+	font-family:Helvetica, "Helvetica Neue", Arial, sans-serif;
+	line-height:40px;
+	font-family:Futura, "Century Gothic", Applegothic, sans-serif;
+	border-top:5px solid #53b231;
+	border-collapse:collapse;
+	width:650px;
+	text-align: center;
+	}
+			
+#second th{
+	background-color:#9cdc86;
+	line-height:45px;
+	border-left:thin solid;
+	text-align:center;
+	font-size:22px;
+	}
+	
+#second  .pair td{
+	background-color:#d6f0c9;
+	border-top:none;
+	border-bottom:none;
+	border-left:thin solid;
+	
+	}
+		
+#second  .unpair td{
+	background-color:#f3fbf0;
+	border-left:thin solid;
+	
+	}
+
+#second  .center {
+	text-align:center;
+}
+
+#second  .left {
+	text-indent:10px;
+	text-align:left;
+}
+
+	
+table#second tr:hover td{
+	background-color:#9bdc85;
+	font-weight:bold;
+ }	
